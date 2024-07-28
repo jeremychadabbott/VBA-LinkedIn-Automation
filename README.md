@@ -1,18 +1,23 @@
-# VBA-LinkedIn-Automation
-LinkedIn employers post jobs that say 'remote' but actaully aren't remote - they require travel, or on site.
-This code filters against key words to eliminate those fake remote jobs, because I am looking for a truly remote job
-this code:
-opens my linkedIn profile
-clicks Jobs
-Clicks 'more'
-starts to iterate over the job listings on the left
-as it looks at each job description, it refers to a set of 'anti-keyords' such as 'Travel', 'On Site', 'Hybrid' etc.
-if a keyword is in the job description, tab 2 is closed and 'X' is clicked on the job so it "wont show it to me anymore"
-if no keywords are detected, the program halts so user can view the job. 
-the program throws the user a message "hit <enter> to resume" so once user decides whether to apply or not
-the program can resume
+LinkedIn often lists jobs as "remote" that aren't truly remote—they may require travel or onsite presence. This code filters out these misleading job postings by using specific keywords to identify and eliminate them. The goal is to find genuinely remote job opportunities efficiently.
 
-Anecdote: using this program, out of 300 job listings for me that were "remote", only 10 made it through my filters
-saving an enormous amount time.
+### How It Works:
 
+1. **Profile Access**: Opens your LinkedIn profile.
+2. **Navigation**: Clicks on the 'Jobs' tab.
+3. **Job Listings**: Clicks 'More' to load additional job listings.
+4. **Iteration**: Iterates over each job listing on the left panel.
+5. **Keyword Filtering**: Examines each job description for a set of 'anti-keywords' such as 'Travel', 'On Site', 'Hybrid', etc.
+6. **Action on Keywords**: If an anti-keyword is found, the code closes the job tab and clicks 'X' to ensure the job is not shown again.
+7. **User Review**: If no keywords are detected, the program pauses to allow the user to review the job.
+    - A message "Hit any key to resume" is displayed, allowing the user to decide whether to apply or not before resuming the filtering process.
+
+### Important Notes:
+
+- **Automatic Mouse Movement**: This code uses automatic mouse movement and targeting instead of an API.
+- **Screen Resolution**: The screen resolution must be set correctly for the mouse movements to align with the intended targets.
+- **Display Changes**: Any changes in how LinkedIn is displayed may break the code, requiring adjustments to the script.
+
+### Anecdote:
+
+Using this program, I filtered through 300 job listings labeled as "remote." Only 10 passed my filters, saving me an enormous amount of time.
 
