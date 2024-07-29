@@ -21,3 +21,39 @@ LinkedIn often lists jobs as "remote" that aren't truly remote—they may requir
 
 Using this program, I filtered through 300 job listings labeled as "remote." Only 10 passed my filters, saving me an enormous amount of time.
 
+## Instructions
+open the XLSM (macro enabled spreadsheet)
+there are two buttons. One "Normal run, launch chrome, search jobs" and the other "Normal run on chrome already open"
+if you click "Normal run, launch chrome, search jobs"
+    chrome will launch and resize.
+    chrome will navigate to "linkedin" (there is an assumption here that you are already logged into linkedin"
+    using mouse coordinates, mouse clicks on "Jobs" 
+    NOTE* mouse coordinate code requires your screen be set to 1366x768
+    using mouse coordinates, code clicks on "More"
+    now a loop begins:
+    using mouse coordinates, mouse click and opens HTML window
+    using mouse coordinates, mouse clicks into HTML windo and right clicks "copy" and cliks "outer HTML"
+    code parses and finds first job that is NOT ALSO "we won't show you this job aymore" (important later)
+    code opens job in new tab
+    code copies text of wopen window
+    code checks text against KEYWORDS (spreadsheet! modify keywords to suite YOU!)
+    if any keywords are found, this is a job we DONT WANT
+    if no keywords are found, code halts and waits for user interaction
+        if no keywords are found, code presents user "hit <enter> to resume"
+        when you hit enter, the screen will flip back to chrome, 2nd tab will close, page will refresh, and serach begins again
+    if keywords are found, 2nd tab closes, page text is copied to check where mouse should click to hit "X" (don't show me this job again)
+    page refreshes
+    search resumes until you hit <break>
+
+    if "Normal run on chrome already open" is clicked
+    this assumes you have already opened linkin page and have performed a search and want to use this code against your search results
+    code behaves almost the same as above except chrome does not launch so
+    first you should have opened linkein. opened jobs. performed a search. now hit "Normal run on chrome already open" button
+
+    This code is just a little hack that helps me screen linkin positions. I leave it running on a second screen and when it halts
+    I see if it's a job I want or if I need to add more keywords to further filter out dumb jobs. 
+
+    
+
+    
+
