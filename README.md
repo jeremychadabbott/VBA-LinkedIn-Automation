@@ -2,7 +2,7 @@ LinkedIn often lists jobs as "remote" that aren't truly remote—they may requir
 
 ### How It Works:
 
-1. **Profile Access**: Opens your LinkedIn profile.
+1. **Profile Access**: Opens your LinkedIn profile (option 1). option 2 is to search existing profile.
 2. **Navigation**: Clicks on the 'Jobs' tab.
 3. **Job Listings**: Clicks 'More' to load additional job listings.
 4. **Iteration**: Iterates over each job listing on the left panel.
